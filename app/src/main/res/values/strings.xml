@@ -23,18 +23,19 @@
   -->
 
 <resources>
-    <string name="app_name">NewsFeed</string>
+    <string name="app_name">Best Burger</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Параметрлер</string>
 
     <!-- Strings for items in activity_main_drawer.xml -->
-    <string name="ic_title_home">Home</string>
-    <string name="ic_title_world">World</string>
-    <string name="ic_title_science">Science</string>
-    <string name="ic_title_sport">Sport</string>
+    <string name="ic_title_home">Негізгі бет</string>
+    <string name="ic_title_world">Тапсырыс беру</string>
+    <string name="ic_title_science">Менің тапсырыстарым</string>
+    <string name="ic_title_sport">Менің профилім</string>
+    <string name="ic_title_out">Шығу</string>
     <string name="ic_title_environment">Environment</string>
     <string name="ic_title_society">Society</string>
     <string name="ic_title_fashion">Fashion</string>

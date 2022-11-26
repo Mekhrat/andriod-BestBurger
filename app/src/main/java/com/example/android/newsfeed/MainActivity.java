@@ -107,17 +107,18 @@ public class MainActivity extends AppCompatActivity
             viewPager.setCurrentItem(Constants.SCIENCE);
         } else if (id == R.id.nav_sport) {
             viewPager.setCurrentItem(Constants.SPORT);
-        } else if (id == R.id.nav_environment) {
-            viewPager.setCurrentItem(Constants.ENVIRONMENT);
-        } else if (id == R.id.nav_society) {
-            viewPager.setCurrentItem(Constants.SOCIETY);
-        } else if (id == R.id.nav_fashion) {
-            viewPager.setCurrentItem(Constants.FASHION);
-        } else if (id == R.id.nav_business) {
-            viewPager.setCurrentItem(Constants.BUSINESS);
-        } else if (id == R.id.nav_culture) {
-            viewPager.setCurrentItem(Constants.CULTURE);
         }
+//        } else if (id == R.id.nav_environment) {
+//            viewPager.setCurrentItem(Constants.ENVIRONMENT);
+//        } else if (id == R.id.nav_society) {
+//            viewPager.setCurrentItem(Constants.SOCIETY);
+//        } else if (id == R.id.nav_fashion) {
+//            viewPager.setCurrentItem(Constants.FASHION);
+//        } else if (id == R.id.nav_business) {
+//            viewPager.setCurrentItem(Constants.BUSINESS);
+//        } else if (id == R.id.nav_culture) {
+//            viewPager.setCurrentItem(Constants.CULTURE);
+//        }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
