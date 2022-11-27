@@ -58,6 +58,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="LoginTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#2962FF</item>
+        <item name="colorPrimaryDark">#2962FF</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
     <!-- Set Navigation drawer icon color -->
     <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
         <item name="color">@color/color_app_bar_text</item>

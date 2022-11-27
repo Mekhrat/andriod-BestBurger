@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFA5">
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress3"
+        android:layout_width="304dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:background="#F4F4F4"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Email енгізіңіз"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#706A6A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="324dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/ic_title_culture"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="283dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Авторизация"
+        android:textColor="#ED0606"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="189dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:text="Best Burger"
+        android:textColor="#FFFFFE"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="296dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="21dp"
+        android:background="#F8F6F6"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Құпия сөз енгізіңіз"
+        android:inputType="textPassword"
+        android:textColorHint="#6A6464"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="230dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="#0091EA"
+        android:text="Кіру"
+        android:textColor="#F8F6F6"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="157dp"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:text="Тіркелу"
+        android:textColor="#FF0202"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="310dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="77dp"
+        android:gravity="center"
+        android:text="Егер сіз тіркелмеген болсаңыз:"
+        android:textColor="#2962FF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

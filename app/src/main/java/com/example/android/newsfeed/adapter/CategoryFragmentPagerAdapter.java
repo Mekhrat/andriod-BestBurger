@@ -76,18 +76,18 @@ public class CategoryFragmentPagerAdapter extends FragmentPagerAdapter {
                 return new ScienceFragment();
             case Constants.SPORT:
                 return new SportFragment();
-            case Constants.ENVIRONMENT:
-                return new EnvironmentFragment();
-            case Constants.SOCIETY:
-                return new SocietyFragment();
-            case Constants.FASHION:
-                return new FashionFragment();
-            case Constants.BUSINESS:
-                return new BusinessFragment();
-            case Constants.CULTURE:
-                return new CultureFragment();
+//            case Constants.ENVIRONMENT:
+//                return new EnvironmentFragment();
+//            case Constants.SOCIETY:
+//                return new SocietyFragment();
+//            case Constants.FASHION:
+//                return new FashionFragment();
+//            case Constants.BUSINESS:
+//                return new BusinessFragment();
+//            case Constants.CULTURE:
+//                return new CultureFragment();
             default:
-                return null;
+                return new HomeFragment();
         }
     }
 
@@ -96,7 +96,7 @@ public class CategoryFragmentPagerAdapter extends FragmentPagerAdapter {
      */
     @Override
     public int getCount() {
-        return 9;
+        return 4;
     }
 
     /**
@@ -118,20 +118,20 @@ public class CategoryFragmentPagerAdapter extends FragmentPagerAdapter {
             case Constants.SPORT:
                 titleResId = R.string.ic_title_sport;
                 break;
-            case Constants.ENVIRONMENT:
-                titleResId = R.string.ic_title_environment;
-                break;
-            case Constants.SOCIETY:
-                titleResId = R.string.ic_title_society;
-                break;
-            case Constants.FASHION:
-                titleResId = R.string.ic_title_fashion;
-                break;
-            case Constants.BUSINESS:
-                titleResId = R.string.ic_title_business;
-                break;
+//            case Constants.ENVIRONMENT:
+//                titleResId = R.string.ic_title_environment;
+//                break;
+//            case Constants.SOCIETY:
+//                titleResId = R.string.ic_title_society;
+//                break;
+//            case Constants.FASHION:
+//                titleResId = R.string.ic_title_fashion;
+//                break;
+//            case Constants.BUSINESS:
+//                titleResId = R.string.ic_title_business;
+//                break;
             default:
-                titleResId = R.string.ic_title_culture;
+                titleResId = R.string.ic_title_home;
                 break;
         }
         return mContext.getString(titleResId);

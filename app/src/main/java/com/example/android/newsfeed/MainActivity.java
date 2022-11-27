@@ -37,6 +37,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.example.android.newsfeed.adapter.CategoryFragmentPagerAdapter;
 import com.example.android.newsfeed.utils.Constants;
@@ -107,7 +108,12 @@ public class MainActivity extends AppCompatActivity
             viewPager.setCurrentItem(Constants.SCIENCE);
         } else if (id == R.id.nav_sport) {
             viewPager.setCurrentItem(Constants.SPORT);
-        }
+        } else if (id == R.id.nav_out) {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "OUT is clicked!", Toast.LENGTH_SHORT);
+            toast.show();
+            Intent settingsIntent = new Intent(this, LoginActivity.class);
+            startActivity(settingsIntent);}
 //        } else if (id == R.id.nav_environment) {
 //            viewPager.setCurrentItem(Constants.ENVIRONMENT);
 //        } else if (id == R.id.nav_society) {
