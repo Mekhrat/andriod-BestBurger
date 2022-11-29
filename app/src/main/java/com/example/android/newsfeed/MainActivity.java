@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity
             viewPager.setCurrentItem(Constants.SPORT);
         } else if (id == R.id.nav_out) {
             Toast toast = Toast.makeText(getApplicationContext(),
-                    "OUT is clicked!", Toast.LENGTH_SHORT);
+                    "Сіз аккаунттан шықтыңыз!", Toast.LENGTH_SHORT);
             toast.show();
             Intent settingsIntent = new Intent(this, LoginActivity.class);
             startActivity(settingsIntent);}
