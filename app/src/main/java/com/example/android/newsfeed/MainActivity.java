@@ -27,6 +27,8 @@ package com.example.android.newsfeed;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
+
+import com.example.android.newsfeed.adapter.MenuFragmentPagerAdapter;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 import androidx.core.view.GravityCompat;
@@ -77,10 +79,13 @@ public class MainActivity extends AppCompatActivity
         onNavigationItemSelected(navigationView.getMenu().getItem(0).setChecked(true));
 
         // Set category fragment pager adapter
-        CategoryFragmentPagerAdapter pagerAdapter =
-                new CategoryFragmentPagerAdapter(this, getSupportFragmentManager());
+//        CategoryFragmentPagerAdapter pagerAdapter =
+//                new CategoryFragmentPagerAdapter(this, getSupportFragmentManager());
         // Set the pager adapter onto the view pager
+        MenuFragmentPagerAdapter pagerAdapter = new MenuFragmentPagerAdapter(this, getSupportFragmentManager());
+
         viewPager.setAdapter(pagerAdapter);
+
     }
 
     @Override
@@ -114,17 +119,6 @@ public class MainActivity extends AppCompatActivity
             toast.show();
             Intent settingsIntent = new Intent(this, LoginActivity.class);
             startActivity(settingsIntent);}
-//        } else if (id == R.id.nav_environment) {
-//            viewPager.setCurrentItem(Constants.ENVIRONMENT);
-//        } else if (id == R.id.nav_society) {
-//            viewPager.setCurrentItem(Constants.SOCIETY);
-//        } else if (id == R.id.nav_fashion) {
-//            viewPager.setCurrentItem(Constants.FASHION);
-//        } else if (id == R.id.nav_business) {
-//            viewPager.setCurrentItem(Constants.BUSINESS);
-//        } else if (id == R.id.nav_culture) {
-//            viewPager.setCurrentItem(Constants.CULTURE);
-//        }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

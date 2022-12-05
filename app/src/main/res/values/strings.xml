@@ -27,6 +27,7 @@
     <string name="login">Login</string>
     <string name="register">Register</string>
     <string name="code">Code</string>
+    <string name="order">Тапсырыс беру</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -162,5 +163,7 @@
     <!-- Label for text size large preference [CHAR LIMIT=20] -->
     <string name="settings_text_size_large_label">Large</string>
     <string name="settings_text_size_large_value" translatable="false">large</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
