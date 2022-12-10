@@ -1,4 +1,4 @@
-package com.example.android.newsfeed;
+package com.example.android.newsfeed.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,21 +11,23 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.android.newsfeed.R;
 import com.example.android.newsfeed.model.Burger;
 
 import java.util.List;
 
-public class BurgerAdapter extends ArrayAdapter<Burger> {
+public class OrdersAdapter extends ArrayAdapter<Burger> {
+
     private LayoutInflater inflater;
     private int layout;
-    private List<Burger> burgers;
+    private List<Burger> orders;
 
 
-    public BurgerAdapter(@NonNull Context context, int resource, @NonNull List<Burger> burgers) {
+    public OrdersAdapter(@NonNull Context context, int resource, @NonNull List<Burger> burgers) {
         super(context, resource, burgers);
         this.inflater = LayoutInflater.from(context);
         this.layout = resource;
-        this.burgers = burgers;
+        this.orders = burgers;
     }
 
     @NonNull
@@ -38,7 +40,7 @@ public class BurgerAdapter extends ArrayAdapter<Burger> {
         TextView capitalView = view.findViewById(R.id.capital);
         TextView price = view.findViewById(R.id.price);
 
-        Burger burger = burgers.get(position);
+        Burger burger = orders.get(position);
 
         flagView.setImageResource(burger.getPhoto());
         nameView.setText(burger.getName());

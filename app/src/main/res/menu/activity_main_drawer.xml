@@ -41,10 +41,6 @@
             android:icon="@drawable/orders"
             android:title="@string/ic_title_science" />
         <item
-            android:id="@+id/nav_sport"
-            android:icon="@drawable/profile"
-            android:title="@string/ic_title_sport" />
-        <item
             android:id="@+id/nav_out"
             android:icon="@drawable/out"
             android:title="@string/ic_title_out" />

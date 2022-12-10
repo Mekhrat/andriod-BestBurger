@@ -16,9 +16,10 @@ import android.widget.Toast;
 
 import com.example.android.newsfeed.OrderActivity;
 import com.example.android.newsfeed.R;
-import com.example.android.newsfeed.BurgerAdapter;
+import com.example.android.newsfeed.adapter.BurgerAdapter;
 import com.example.android.newsfeed.model.Burger;
 import com.example.android.newsfeed.db.BurgerDB;
+import com.example.android.newsfeed.utils.Type;
 
 import java.util.List;
 
@@ -53,9 +54,9 @@ public class MenuFragment extends Fragment implements AdapterView.OnItemClickLis
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        Toast.makeText(getActivity(), String.valueOf(i), Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(view.getContext(), OrderActivity.class);
         intent.putExtra("id", i);
+        intent.putExtra("type", Type.ORDER);
         startActivity(intent);
     }
 }

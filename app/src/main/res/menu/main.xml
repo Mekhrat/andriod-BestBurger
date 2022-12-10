@@ -28,5 +28,6 @@
     tools:context="com.example.android.newsfeed.MainActivity">
     <item
         android:id="@+id/action_settings"
+        android:icon="@drawable/person"
         android:title="@string/action_settings" />
 </menu>

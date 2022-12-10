@@ -11,7 +11,7 @@ public class UsersDB {
     private static Map<String, User> users = new HashMap<String, User>();
 
     public static User getUserByEmail(String email) {
-//        users.put("mekhrat_ashirbekov@mail.ru", new User("Mekhrat","Ashirbekov","Almaty 34","87714565768","mekhrat_ashirbekov@mail.ru","qwerty123"));
+        users.put("mekhrat_ashirbekov@mail.ru", new User("Mekhrat","Ashirbekov","Almaty 34","87714565768","mekhrat_ashirbekov@mail.ru","qwerty123"));
         return users.get(email);
     }
 

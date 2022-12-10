@@ -59,14 +59,14 @@
     </style>
 
     <style name="LoginTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">#2962FF</item>
-        <item name="colorPrimaryDark">#2962FF</item>
+        <item name="colorPrimary">#1C1B1B</item>
+        <item name="colorPrimaryDark">#1C1B1B</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="RegisterTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">#0091EA</item>
-        <item name="colorPrimaryDark">#0091EA</item>
+        <item name="colorPrimary">#1C1B1B</item>
+        <item name="colorPrimaryDark">#1C1B1B</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 

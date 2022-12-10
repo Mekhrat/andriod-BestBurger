@@ -40,7 +40,7 @@ public class LongOperation extends AsyncTask<Void, Void, String> {
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setReadTimeout(15000);
             conn.setConnectTimeout(15000);
-            conn.setRequestMethod("GET");
+            conn.setRequestMethod("POST");
             conn.setDoInput(true);
             conn.setDoOutput(true);
 

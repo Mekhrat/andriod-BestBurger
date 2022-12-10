@@ -49,7 +49,7 @@
     <color name="color_trail_text">#102027</color>
     <color name="color_date_text">#a4a4a4</color>
 
-    <color name="color_app_bar_text">#005689</color>
+    <color name="color_app_bar_text">#FFFFFF</color>
     <color name="color_tab_text">#a7c0cd</color>
 
     <color name="nav_bar_start">#7db1ec</color>

@@ -41,7 +41,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.example.android.newsfeed.adapter.CategoryFragmentPagerAdapter;
 import com.example.android.newsfeed.utils.Constants;
 
 public class MainActivity extends AppCompatActivity
@@ -108,12 +107,14 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             viewPager.setCurrentItem(Constants.HOME);
         } else if (id == R.id.nav_world) {
-            viewPager.setCurrentItem(Constants.WORLD);
+            viewPager.setCurrentItem(Constants.MENU);
         } else if (id == R.id.nav_science) {
-            viewPager.setCurrentItem(Constants.SCIENCE);
-        } else if (id == R.id.nav_sport) {
-            viewPager.setCurrentItem(Constants.SPORT);
-        } else if (id == R.id.nav_out) {
+            viewPager.setCurrentItem(Constants.ORDERS);
+        }
+//        else if (id == R.id.nav_sport) {
+//            viewPager.setCurrentItem(Constants.SPORT);
+//        }
+        else if (id == R.id.nav_out) {
             Toast toast = Toast.makeText(getApplicationContext(),
                     "Сіз аккаунттан шықтыңыз!", Toast.LENGTH_SHORT);
             toast.show();
@@ -138,7 +139,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
-            Intent settingsIntent = new Intent(this, SettingsActivity.class);
+            Intent settingsIntent = new Intent(this, ProfileActivity.class);
             startActivity(settingsIntent);
             return true;
         }

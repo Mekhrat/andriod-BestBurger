@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.android.newsfeed.db.CurrentUser;
 import com.example.android.newsfeed.db.UsersDB;
 import com.example.android.newsfeed.model.User;
 
@@ -18,6 +19,7 @@ import java.util.Map;
 public class LoginActivity extends AppCompatActivity {
 
     private EditText inputpassword, inputlogin;
+    private TextView username, emaill;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.login);
         inputlogin = findViewById(R.id.inputlogin);
         inputpassword = findViewById(R.id.inputpassword);
+
     }
 
     public void onClick(View view) {
@@ -37,6 +40,8 @@ public class LoginActivity extends AppCompatActivity {
                     Toast toast = Toast.makeText(getApplicationContext(),
                             "Сіз сәтті кірдіңіз!", Toast.LENGTH_SHORT);
                     toast.show();
+                    CurrentUser.setCurrentUser(user);
+
                     Intent settingsIntent = new Intent(this, MainActivity.class);
                     startActivity(settingsIntent);
                 } else {
@@ -45,9 +50,11 @@ public class LoginActivity extends AppCompatActivity {
                     toast.show();
                 }
             }
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    "Бұл аккаунт тіркелмеген!", Toast.LENGTH_SHORT);
-            toast.show();
+            else {
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Бұл аккаунт тіркелмеген!", Toast.LENGTH_SHORT);
+                toast.show();
+            }
         }
         else {
             Toast toast = Toast.makeText(getApplicationContext(),
